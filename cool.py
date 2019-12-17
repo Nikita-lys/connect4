@@ -1,3 +1,10 @@
+"""
+Лысенко Н. С. 4.8
+
+Интеллектуальные системы.
+Игра 4 в ряд.
+"""
+
 import numpy as np
 import random
 import math
