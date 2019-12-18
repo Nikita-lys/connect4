@@ -367,7 +367,12 @@ def game(mode: int) -> None:
     while not game_over:
         # PLAYER move
         if turn == PLAYER:
-            col = int(input('Choose column [0-6]: '))
+            while 2 * 2 == 4:
+                try:
+                    col = int(input('Choose column [0-6]: '))
+                    break
+                except ValueError:
+                    continue
 
             row = get_next_open_row(board, col)
             board = drop_piece(board, row, col, PLAYER_PIECE)
